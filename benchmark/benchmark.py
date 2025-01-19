@@ -154,7 +154,7 @@ def parse_args():
     parser.add_argument(
         "--iterations",
         type=int,
-        default=100,
+        default=10000,
         help="Number of iterations for each operation (default: 100)",
     )
     parser.add_argument(

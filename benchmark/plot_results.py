@@ -65,14 +65,14 @@ def create_bar_chart(python_results, rocket_results, axum_results, thread_type):
     ax.legend(loc="upper left", fontsize=18)
 
     plt.tight_layout()
-    plt.savefig(f"webserver_benchmark_{thread_type}_release.png", dpi=200)
+    plt.savefig(f"webserver_benchmark_{thread_type}.png", dpi=200)
     print(
-        f"{thread_type.replace('_', ' ').title()} bar chart saved as 'benchmark_comparison_{thread_type}_release.png'"
+        f"{thread_type.replace('_', ' ').title()} bar chart saved as 'benchmark_comparison_{thread_type}.png'"
     )
 
 
 if __name__ == "__main__":
-    with open("benchmark_results_python.json", "r") as f:
+    with open("benchmark_results_fastapi.json", "r") as f:
         python_results = json.load(f)
     with open("benchmark_results_rocket.json", "r") as f:
         rocket_results = json.load(f)
