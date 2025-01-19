@@ -1,0 +1,31 @@
+target
+__pycache__
+__DS_Store__
+
+.docker/**
+.DS_Store
+**/.DS_Store
+.mypy_cache/
+
+# SQLite database files
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-shm
+*.sqlite-wal
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Benchmark result files
+benchmark_results_*.json
+webserver_benchmark_*.png

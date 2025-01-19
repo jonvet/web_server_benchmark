@@ -1,0 +1,23 @@
+[project]
+name = "python_fast_api"
+version = "0.1.0"
+description = "Simple FastAPI web server"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.14.0",
+    "fastapi>=0.115.0",
+    "pydantic>=2.10.0",
+    "sqlalchemy>=2.0.37",   
+    "uvicorn>=0.34.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+include = '\.pyi?$'
