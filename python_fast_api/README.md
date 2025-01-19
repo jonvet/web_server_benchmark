@@ -1,4 +1,4 @@
-# Python FastAPI
+# Python FastAPI server
 
 Simple FastAPI web server.
 
