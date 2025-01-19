@@ -167,7 +167,7 @@ def parse_args():
 
 
 def identify_server() -> str:
-    return session.get(f"{BASE_URL}/info").json()["name"]
+    return session.get(f"{BASE_URL}/info").text
 
 
 if __name__ == "__main__":

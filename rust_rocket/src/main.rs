@@ -9,12 +9,7 @@ use crate::models::{NewTask, Task};
 use rocket::http::Status;
 use rocket::serde::json::Json;
 use rocket_sync_db_pools::{database, diesel};
-use serde::Serialize;
 
-#[derive(Serialize)]
-struct ServerInfo {
-    name: &'static str,
-}
 
 #[database("sqlite_database")]
 struct DbConn(diesel::SqliteConnection);
@@ -25,8 +20,8 @@ fn hello() -> &'static str {
 }
 
 #[get("/info")]
-fn info() -> Json<ServerInfo> {
-    Json(ServerInfo { name: "rocket" })
+fn info() -> &'static str {
+    "rocket"
 }
 
 #[post("/tasks", format = "json", data = "<task>")]
