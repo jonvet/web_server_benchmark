@@ -14,8 +14,8 @@ The [benchmark](benchmark/) directory contains a script to benchmark the perform
 
 This produces the following plots:
 
-![Single Threaded Benchmark results](benchmark/assets/webserver_benchmark_single_threaded.png)
-![Multi Threaded Benchmark results](benchmark/assets/webserver_benchmark_multi_threaded.png)
+![Single Threaded Benchmark results](benchmark/assets/benchmark_single_threaded.png)
+![Multi Threaded Benchmark results](benchmark/assets/benchmark_multi_threaded.png)
 
 
 If you like, check out my blog post on this comparison [Benchmarking Python and Rust web servers](https://www.jonvet.com/blog/benchmarking-python-rust-web-servers).
